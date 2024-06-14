@@ -2,13 +2,29 @@
 # It can be edited online at https://dandiarchive.org/dandiset/001056
 # and obtained from the dandiarchive.
 '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach: []
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 530215072
+  numberOfFiles: 4
+  numberOfSubjects: 2
   schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9544
+    name: Macaca mulatta - Rhesus monkey
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ProcessingModule
 citation: 'Filipe, Carolina (2024) NeuroTask - Center-Out with bump: A Benchmark Dataset
   for Multi-Task, -Session and -Subject Neural Analysis (Version draft) [Data set].
   DANDI archive. https://dandiarchive.org/dandiset/001056/draft'
@@ -27,22 +43,53 @@ description: 'NeuroTask is a benchmark dataset designed to facilitate the develo
   7 tasks across 17 subjects.
 
 
-  This dataset includes:
+  Check out the github repository for more resources and some example notebooks: https://github.com/catniplab/NeuroTask/
 
+
+  This dataset includes:
 
   - Spike counts per unit
 
-  - Behavioral data (hand/cursor position, velocity, force)'
+  - Behavioral data (hand/cursor position, velocity, force)
+
+  - Events indications
+
+  '
+ethicsApproval: []
 id: DANDI:001056/draft
 identifier: DANDI:001056
+keywords:
+- Center Out
+- Bump
+- Reaching
+- Monkey
+- Benchmark
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001056/versions/draft/assets/
 name: 'NeuroTask - Center-Out with bump: A Benchmark Dataset for Multi-Task, -Session
   and -Subject Neural Analysis'
+protocol: []
+relatedResource:
+- identifier: https://doi.org/10.5061/dryad.nk98sf7q7
+  name: Area 2 of primary somatosensory cortex encodes kinematics of the whole arm
+  relation: dcite:IsDerivedFrom
+  repository: 'Data from: Area 2 of primary somatosensory cortex encodes kinematics
+    of the whole arm'
+  resourceType: dcite:Dataset
+  schemaKey: Resource
+  url: https://datadryad.org/stash/dataset/doi:10.5061/dryad.nk98sf7q7
+- identifier: https://doi.org/10.7554/eLife.48198
+  name: Area 2 of primary somatosensory cortex encodes kinematics of the whole arm
+  relation: dcite:References
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://elifesciences.org/articles/48198
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.7
+studyTarget: []
 url: https://dandiarchive.org/dandiset/001056/draft
 version: draft
+wasGeneratedBy: []
